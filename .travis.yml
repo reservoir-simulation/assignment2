@@ -12,7 +12,7 @@ install:
   - conda info -a
   - conda install nbconvert ipython
 before_script:
-  - "curl -H \"Authorization: token ${GH_TOKEN}\" -H 'Accept: application/vnd.github.v3.raw' -O --location \"https://api.github.com/repos/PGE383-HPC/${ASSIGNMENT}/contents/test.py\""
+  - "curl -H \"Authorization: token ${GH_TOKEN}\" -H 'Accept: application/vnd.github.v3.raw' -O --location \"https://api.github.com/repos/PGE323M/${ASSIGNMENT}/contents/test.py\""
   - if [ -f ${ASSIGNMENT}.py ]; then
     rm -f ${ASSIGNMENT}.py;
     fi
